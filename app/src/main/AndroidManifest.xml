@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EncyclopediaLanding"
+            android:label="@string/title_activity_encyclopedia_landing" >
+        </activity>
+        <activity
+            android:name=".VoteLanding"
+            android:label="@string/title_activity_vote_landing" >
+        </activity>
+        <activity
+            android:name=".UploadLanding"
+            android:label="@string/title_activity_upload_landing" >
+        </activity>
     </application>
 
 </manifest>
