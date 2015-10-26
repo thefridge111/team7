@@ -1,9 +1,11 @@
 package com.nuteam7.www.vicidapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -33,5 +35,20 @@ public class LandingActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goToUpload(View view) {
+        Intent i=new Intent(LandingActivity.this, UploadLanding.class);
+        startActivity(i);
+    }
+
+    public void goToVote(View view) {
+        Intent i=new Intent(LandingActivity.this, VoteLanding.class);
+        startActivity(i);
+    }
+
+    public void goToEncyclopedia(View view) {
+        Intent i=new Intent(LandingActivity.this, EncyclopediaLanding.class);
+        startActivity(i);
     }
 }

@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="The Norwich U."
-        android:id="@+id/textView2"
+        android:text="@string/norwich_U"
+        android:id="@+id/norwichU"
         android:layout_marginTop="169dp"
         android:textColor="#c99c05"
         android:textIsSelectable="false"
@@ -21,22 +21,23 @@
         android:textStyle="italic"
         android:fontFamily="serif"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_alignStart="@+id/vicIdAppTxt" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Vehicle ID App"
-        android:id="@+id/textView"
+        android:text="@string/vic_id_app_txt"
+        android:id="@+id/vicIdAppTxt"
         android:textColor="#c99c05"
         android:textSize="@dimen/abc_text_size_display_2_material"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
         android:typeface="serif"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/norwichU"
         android:layout_centerHorizontal="true" />
 
+    <!-- Start Id button -->
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
@@ -45,13 +46,15 @@
         android:typeface="normal"
         android:textColor="#ac0805"
         android:layout_marginTop="206dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/vicIdAppTxt"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_rect_button"
         android:clickable="true"
         android:enabled="true"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:onClick="goToUpload"/>
 
+    <!-- Vote Button -->
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
@@ -65,8 +68,10 @@
         android:layout_below="@+id/startIdBbutton"
         android:layout_alignStart="@+id/startIdBbutton"
         android:layout_marginTop="6dp"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:onClick="goToVote" />
 
+    <!-- Browse Vics button -->
     <Button
         android:layout_width="110dp"
         android:layout_height="25dp"
@@ -80,6 +85,7 @@
         android:layout_below="@+id/votebutton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        android:onClick="goToEncyclopedia" />
 
 </RelativeLayout>

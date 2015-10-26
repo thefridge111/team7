@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/vehicle_shape_quest"
-        android:id="@+id/textView3"
+        android:id="@+id/whatVicTxt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="171dp"
         android:textColor="#c99c05"
