@@ -61,6 +61,14 @@
             android:layout_gravity="center_horizontal"
             android:clickable="true"
             android:textColor="#ffba22" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#ffba22" />
     </RadioGroup>
     <ImageView
         android:layout_width="fill_parent"
