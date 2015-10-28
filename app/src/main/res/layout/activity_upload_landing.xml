@@ -13,16 +13,77 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/vehicle_shape_quest"
         android:id="@+id/whatVicTxt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="171dp"
+        android:layout_marginTop="99dp"
         android:textColor="#c99c05"
         android:textIsSelectable="false"
         android:textSize="@dimen/abc_text_size_display_1_material"
         android:typeface="normal"
         android:textStyle="italic"
-        android:fontFamily="serif"/>
+        android:fontFamily="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car"
+        android:id="@+id/imageView7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/armour"
+        android:id="@+id/imageView6"
+        android:layout_above="@+id/imageView7"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sports"
+        android:id="@+id/imageView5"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/suv"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/truck"
+        android:id="@+id/imageView3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/van"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vintage"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/whatVicTxt"
+        android:layout_alignParentStart="false" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:backgroundTint="#ffb512" />
 
 
 </RelativeLayout>
