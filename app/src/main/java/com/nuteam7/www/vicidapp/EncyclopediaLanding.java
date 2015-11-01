@@ -1,9 +1,14 @@
 package com.nuteam7.www.vicidapp;
 
+import android.app.LauncherActivity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RadioButton;
 
 public class EncyclopediaLanding extends AppCompatActivity {
 
@@ -34,4 +39,26 @@ public class EncyclopediaLanding extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.brand_sort:
+                if (checked)
+                    // Pirates are the best
+                    break;
+            case R.id.model_sort:
+                if (checked)
+                    // Ninjas rule
+                    break;
+            case R.id.year_sort:
+                if (checked)
+                    // Ninjas rule
+                    break;
+        }
+    }
+
 }

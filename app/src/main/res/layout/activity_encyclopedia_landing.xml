@@ -16,22 +16,45 @@
         android:layout_alignParentStart="true"
         android:clickable="true"
         android:backgroundTint="#ffbe15" />
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/car"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="172dp" />
 
-    <TextView
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_weight="1" />
+
+
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Car features go here"
-        android:id="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="219dp"
-        android:background="#ffbe15" />
+        android:layout_alignTop="@android:id/list"
+        android:layout_alignEnd="@android:id/list">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Name"
+            android:id="@+id/brand_sort"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@android:id/list"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Name"
+            android:id="@+id/model_sort"
+            android:layout_below="@+id/brand_sort"
+            android:layout_alignParentEnd="true"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:id="@+id/year_sort"
+            android:layout_below="@+id/model_sort"
+            android:layout_alignParentEnd="true"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
+
 </RelativeLayout>
