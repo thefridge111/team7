@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
-        android:backgroundTint="#ffbe15" />
+        android:backgroundTint="#ffbe15"
+        android:background="@drawable/rounded_rect_button" />
 
     <ListView
         android:layout_width="fill_parent"
