@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -22,13 +23,22 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.SimpleCursorAdapter;
 import android.support.v4.content.CursorLoader;
+import android.widget.TextView;
 
 public class EncyclopediaLanding extends AppCompatActivity {
+
+    EditText modelInput; //xml input
+    TextView outputText; //xml output
+    MyDBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encyclopedia_landing);
+        modelInput = (EditText) findViewById(R.id.Input);
+        outputText = (TextView) findViewById(R.id.Text);
+        dbHandler = new MyDBHandler(this, null, null, 1);
+        printDatabase();
     }
 
     @Override
@@ -53,7 +63,7 @@ public class EncyclopediaLanding extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //This may need to get moved to ListViewLoader
+ /*   //This may need to get moved to ListViewLoader
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -73,6 +83,29 @@ public class EncyclopediaLanding extends AppCompatActivity {
                     // Ninjas rule
                     break;
         }
+    }
+
+} */
+
+    //Add a model to the database
+    public void addButtonClicked(View view){
+        Model model = new Model(modelInput.getText().toString());
+        dbHandler.addModel(model);
+        printDatabase();
+    }
+
+    //Delete items
+    public void deleteButtonClicked(View view){
+        String inputText = modelInput.getText().toString();
+        dbHandler.deleteModel(inputText);
+        printDatabase();
+    }
+
+    //Print the database
+    public void printDatabase(){
+        String dbString = dbHandler.databaseToString();
+        outputText.setText(dbString);
+        modelInput.setText("");
     }
 
 }
