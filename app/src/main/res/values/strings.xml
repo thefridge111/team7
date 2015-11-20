@@ -19,4 +19,5 @@
 
     <!-- Encyclopedia Landing Page -->
     <string name="hello_world">Howdy!</string>
+    <string name="title_activity_sign_in">signIn</string>
 </resources>

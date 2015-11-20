@@ -28,6 +28,11 @@
             android:name=".UploadLanding"
             android:label="@string/title_activity_upload_landing" >
         </activity>
+        <activity
+            android:name=".signIn"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
