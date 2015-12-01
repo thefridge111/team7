@@ -7,7 +7,7 @@
     tools:context="com.nuteam7.www.vicidapp.EncyclopediaLanding"
     android:background="#ac0805">
 
-    <Button
+ <!--   <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -15,21 +15,29 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
-        android:backgroundTint="#ffbe15" />
+        android:backgroundTint="#ffbe15"
+        android:background="@drawable/rounded_rect_button" />
 
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:id="@android:id/list"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true" />
 
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignBottom="@android:id/list"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="65dp">
+=======
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+>>>>>>> a10eec6beeed2cf30ae4d9cf1990cadb60c3e8b6
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,5 +65,27 @@
             android:layout_alignParentEnd="true"
             android:onClick="onRadioButtonClicked" />
     </RadioGroup>
+
+</RelativeLayout>
+-->
+
+    <Button
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:onClick="deleteButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addButton"
+        android:layout_alignRight="@+id/Input"
+        android:layout_alignEnd="@+id/Input" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/VidIdApp.iml" filepath="$PROJECT_DIR$/VidIdApp.iml" />
+=======
+>>>>>>> a10eec6beeed2cf30ae4d9cf1990cadb60c3e8b6
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/team7.iml" filepath="$PROJECT_DIR$/team7.iml" />
     </modules>
   </component>
 </project>

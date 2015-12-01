@@ -51,4 +51,9 @@ public class LandingActivity extends AppCompatActivity {
         Intent i=new Intent(LandingActivity.this, EncyclopediaLanding.class);
         startActivity(i);
     }
+
+    public void goToSignIn(View view) {
+        Intent i=new Intent(LandingActivity.this, MainActivity.class);
+        startActivity(i);
+    }
 }

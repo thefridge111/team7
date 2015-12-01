@@ -2,5 +2,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".LandingActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
+<<<<<<< HEAD
         android:orderInCategory="100" android:showAsAction="never" />
+=======
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/MenuGSignInButton"
+        android:icon="@drawable/btn_google_light_normal_hdpi"
+        android:title="@string/googsign"
+        app:showAsAction="always"/>
+
+>>>>>>> a10eec6beeed2cf30ae4d9cf1990cadb60c3e8b6
 </menu>
