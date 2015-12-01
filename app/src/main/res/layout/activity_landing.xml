@@ -42,6 +42,23 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:text=" Google Sign In "
+        android:id="@+id/GSignInButton"
+        android:typeface="normal"
+        android:textColor="#ac0805"
+        android:background="@drawable/rounded_rect_button"
+        android:clickable="true"
+        android:enabled="true"
+        android:textSize="25dp"
+        android:onClick="goToSignIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/norwichU" />
+
+
+    <!-- Upload Button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text=" Upload "
         android:id="@+id/startIdBbutton"
         android:typeface="normal"
