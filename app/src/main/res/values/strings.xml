@@ -7,6 +7,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_upload_landing">UploadLanding</string>
     <string name="vic_id_app_txt">Vehicle ID App</string>
+    <string name="googsign">Google Sign In</string>
+    <string name="upload">Upload!</string>
+    <string name="votebutton">Vote!</string>
+    <string name="browsevicsbutton">Browse All Vehicles</string>
 
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
