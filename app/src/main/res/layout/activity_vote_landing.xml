@@ -53,14 +53,12 @@
             android:clickable="true"
             android:textColor="#ffba22" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:text="Option Four"
-            android:id="@+id/radioButton4"
+            android:id="@+id/editText"
             android:layout_gravity="center_horizontal"
-            android:clickable="true"
-            android:textColor="#ffba22" />
+            android:background="#fdfdfe" />
 
         <Button
             android:layout_width="wrap_content"

@@ -13,14 +13,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/vehicle_shape_quest"
         android:id="@+id/whatVicTxt"
-        android:layout_marginTop="99dp"
         android:textColor="#c99c05"
         android:textIsSelectable="false"
-        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textSize="24dp"
         android:typeface="normal"
         android:textStyle="italic"
         android:fontFamily="serif"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true" />
 
     <ImageView
@@ -42,8 +41,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/sports"
         android:id="@+id/imageView5"
-        android:layout_above="@+id/imageView6"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -57,8 +57,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/truck"
         android:id="@+id/imageView3"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp" />
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
