@@ -38,7 +38,7 @@
         android:layout_below="@+id/norwichU"
         android:layout_centerHorizontal="true" />
 
-    <!-- Upload Button -->
+    <!-- Sign In Button -->
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
